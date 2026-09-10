@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo - Gabriel Venditti Barreira</title>
+    <meta
+      name="description"
+      content="WDD 131 - Fundamentos da Web Dinâmica, Gabriel Venditti Barreira, álbum responsivo de imagens de templos com HTML, CSS Grid e JavaScript."
+    >
+    <meta name="author" content="Gabriel Venditti Barreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grandes.css">
+    <script src="scripts/templos.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Álbum do Templo</h1>
+        <button id="menu" type="button" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+      </div>
+      <nav id="navigation">
+        <a href="index.html">Página Inicial</a>
+        <a href="#">Antigo</a>
+        <a href="#">Novo</a>
+        <a href="#">Grande</a>
+        <a href="#">Pequeno</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Templos</h1>
+      <div class="temple-grid">
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de Abidjã Costa do Marfim" width="800" height="600">
+          <figcaption>Templo de Abidjã Costa do Marfim</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de Salt Lake" width="800" height="600">
+          <figcaption>Templo de Salt Lake</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de São Paulo Brasil" width="800" height="600">
+          <figcaption>Templo de São Paulo Brasil</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de Campinas Brasil" width="800" height="600">
+          <figcaption>Templo de Campinas Brasil</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de Fortaleza Brasil" width="800" height="600">
+          <figcaption>Templo de Fortaleza Brasil</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de Recife Brasil" width="800" height="600">
+          <figcaption>Templo de Recife Brasil</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo do Rio de Janeiro Brasil" width="800" height="600">
+          <figcaption>Templo do Rio de Janeiro Brasil</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de Brasília Brasil" width="800" height="600">
+          <figcaption>Templo de Brasília Brasil</figcaption>
+        </figure>
+        <figure>
+          <img src="imagens/templo-abidja.jpeg" alt="Templo de Manaus Brasil" width="800" height="600">
+          <figcaption>Templo de Manaus Brasil</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="anoatual"></span> Gabriel Venditti Barreira | Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </footer>
+  </body>
+</html>
