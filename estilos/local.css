@@ -1,0 +1,163 @@
+:root {
+  --green: #0b6b3a;
+  --blue: #17324d;
+  --yellow: #ffd166;
+  --background: #f6f8fb;
+  --surface: #ffffff;
+  --text: #1f2933;
+  --border: #d9e2ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: var(--green);
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  border-bottom: 0.7rem solid var(--yellow);
+}
+
+header h1 {
+  margin: 0;
+  padding: 1.35rem 1rem;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 2rem;
+}
+
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: var(--surface);
+}
+
+.hero,
+.hero img {
+  display: block;
+  width: 100%;
+}
+
+.hero img {
+  height: auto;
+}
+
+.card {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  color: var(--blue);
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.45rem;
+}
+
+.weather-card img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: minmax(8rem, 1fr) 1fr;
+  gap: 0.35rem 0.75rem;
+  max-width: 24rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+dt {
+  color: var(--blue);
+  font-weight: 700;
+  text-align: right;
+}
+
+dd {
+  margin: 0;
+}
+
+footer {
+  padding: 1.25rem 1rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#ultimaModificacao {
+  color: #d9f2ea;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 720px) {
+  body {
+    background-color: #e8eef5;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  main {
+    position: relative;
+    min-height: 620px;
+  }
+
+  .hero img {
+    min-height: 620px;
+    object-fit: cover;
+  }
+
+  .card {
+    position: absolute;
+    width: min(30%, 20rem);
+    border: 1px solid rgb(255 255 255 / 0.65);
+    background-color: rgb(255 255 255 / 0.9);
+    box-shadow: 0 12px 26px rgb(23 50 77 / 0.22);
+  }
+
+  .data-card {
+    top: 3rem;
+    left: 2rem;
+  }
+
+  .weather-card {
+    right: 2rem;
+    bottom: 3rem;
+  }
+
+  .card h2 {
+    margin-inline: -1rem;
+    padding: 0.65rem 1rem;
+    background-color: var(--green);
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .weather-card h2::after {
+    content: " ⛅";
+  }
+
+  .weather-card img {
+    display: none;
+  }
+
+  dl {
+    grid-template-columns: minmax(7.5rem, 1fr) 1fr;
+  }
+}
