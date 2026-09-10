@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 504" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Bandeira do Brasil</title>
+  <desc id="descricao">Bandeira verde com losango amarelo e circulo azul.</desc>
+  <rect width="720" height="504" fill="#009b3a"/>
+  <path fill="#ffdf00" d="M360 72 648 252 360 432 72 252z"/>
+  <circle cx="360" cy="252" r="126" fill="#002776"/>
+  <path fill="#fff" d="M237 225c82-28 180-16 246 40l-18 21c-58-49-145-60-219-35z"/>
+</svg>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Fundamentos da Web Dinâmica - Gabriel Venditti Barreira</title>
+    <meta
+      name="description"
+      content="WDD 131 - Fundamentos da Web Dinâmica, Gabriel Venditti Barreira, página inicial com informações pessoais, Brasil, links do curso, HTML, CSS e JavaScript."
+    >
+    <meta name="author" content="Gabriel Venditti Barreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="estilos/base.css">
+    <script src="scripts/obterdatas.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        WDD 131: Fundamentos da Web Dinâmica
+        <span>Gabriel Venditti Barreira</span>
+      </h1>
+      <nav>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7"
+          target="_blank"
+          rel="noopener"
+        >Escritura</a>
+        <a href="#">Projeto Final</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Gabriel Venditti Barreira</h1>
+      <div class="card-grid">
+        <section class="card">
+          <h2>Sobre Mim</h2>
+          <div class="card-content about-content">
+            <img src="imagens/perfil.jpg" alt="Foto de perfil de Gabriel Venditti Barreira" width="200" height="254">
+            <p>
+              Olá! Meu nome é Gabriel Venditti Barreira. Sou estudante da BYU-Idaho e estou
+              desenvolvendo minhas habilidades em HTML, CSS, JavaScript e design para a web.
+              Gosto de aprender por meio de projetos práticos, resolver problemas e criar
+              páginas claras, acessíveis e úteis para quem as visita.
+            </p>
+            <p>
+              Neste curso, quero fortalecer minha base em desenvolvimento web dinâmico e
+              praticar decisões de design que tornam uma página mais organizada, legível e
+              fácil de navegar.
+            </p>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Brasil</h2>
+          <div class="card-content country-content">
+            <img src="imagens/bandeira-brasil.svg" alt="Bandeira do Brasil" width="220" height="154">
+            <p>
+              O Brasil é o maior país da América do Sul e é conhecido por sua diversidade
+              cultural, belezas naturais e povo acolhedor. O país reúne florestas, praias,
+              cidades movimentadas e uma rica variedade de comidas, músicas e tradições.
+            </p>
+            <p>
+              Essa diversidade inspira criatividade e colaboração, qualidades importantes para
+              estudar tecnologia e criar experiências digitais que comuniquem bem.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="anoatual"></span> Gabriel Venditti Barreira | Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </footer>
+  </body>
+</html>
