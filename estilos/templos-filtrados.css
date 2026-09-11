@@ -1,0 +1,160 @@
+:root {
+  --primary: #17324d;
+  --secondary: #0b6b6e;
+  --accent: #b44b2a;
+  --background: #f6f8fb;
+  --surface: #ffffff;
+  --text: #1f2933;
+  --border: #d9e2ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.45rem;
+}
+
+#menu {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#menu:hover,
+#menu:focus {
+  background-color: #ffffff;
+  color: var(--primary);
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--secondary);
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  padding: 0.9rem 1rem;
+  border-bottom: 4px solid transparent;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.active {
+  background-color: #084f51;
+  border-bottom-color: #ffd166;
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+main h1 {
+  margin: 0 0 1.5rem;
+  color: var(--primary);
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.temple-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--surface);
+  box-shadow: 0 10px 24px rgb(23 50 77 / 0.08);
+}
+
+.temple-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.temple-card figcaption {
+  padding: 1rem;
+}
+
+.temple-card h2 {
+  margin: 0 0 0.8rem;
+  color: var(--primary);
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.temple-card p {
+  margin: 0.35rem 0;
+}
+
+.temple-card span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+footer {
+  padding: 1.25rem 1rem;
+  background-color: var(--primary);
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#ultimaModificacao {
+  color: #cce6e7;
+  font-size: 0.95rem;
+}

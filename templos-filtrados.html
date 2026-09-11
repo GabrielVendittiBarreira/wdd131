@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templos Filtrados - Gabriel Venditti Barreira</title>
+    <meta
+      name="description"
+      content="WDD 131 - Fundamentos da Web Dinâmica, Gabriel Venditti Barreira, álbum de templos com cards gerados por JavaScript, filtros e carregamento lento."
+    >
+    <meta name="author" content="Gabriel Venditti Barreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados-grandes.css">
+    <script src="scripts/templos-filtrados.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Álbum do Templo</h1>
+        <button id="menu" type="button" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+      </div>
+      <nav id="navigation">
+        <a href="#" data-filter="inicio">Página Inicial</a>
+        <a href="#" data-filter="antigo">Antigos</a>
+        <a href="#" data-filter="novo">Novos</a>
+        <a href="#" data-filter="grande">Grandes</a>
+        <a href="#" data-filter="pequeno">Pequenos</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="album-title">Todos os Templos</h1>
+      <div id="temple-grid" class="temple-grid"></div>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="anoatual"></span> Gabriel Venditti Barreira | Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </footer>
+  </body>
+</html>
