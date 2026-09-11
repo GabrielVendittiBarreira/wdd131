@@ -53,7 +53,7 @@ const templos = [
     localizacao: "São Paulo, Brasil",
     consagracao: "1978, 30 de outubro",
     area: 59246,
-    urlDaImagem: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-lds-187029-wallpaper.jpg"
+    urlDaImagem: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Templo_de_sao_paulo.jpg/500px-Templo_de_sao_paulo.jpg"
   },
   {
     nomeDoTemplo: "Recife Brasil",
@@ -67,7 +67,7 @@ const templos = [
     localizacao: "Manaus, Brasil",
     consagracao: "2012, 10 de junho",
     area: 32032,
-    urlDaImagem: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manaus-brazil/400x250/manaus-brazil-temple-1027004-wallpaper.jpg"
+    urlDaImagem: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Templo_de_Manaus.jpg/500px-Templo_de_Manaus.jpg"
   }
 ];
 
