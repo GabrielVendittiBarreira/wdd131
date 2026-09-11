@@ -1,0 +1,155 @@
+:root {
+  --primary: #4b2e24;
+  --accent: #d9a441;
+  --background: #f7f2ea;
+  --surface: #ffffff;
+  --text: #25211f;
+  --border: #d8c7b4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  padding: 2rem 1rem;
+  border-bottom: 0.5rem solid var(--accent);
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 2.4rem;
+}
+
+header p,
+footer p {
+  margin: 0.35rem 0 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+section {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--surface);
+}
+
+h2,
+h3 {
+  color: var(--primary);
+  font-family: "Merriweather", Georgia, serif;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 3px solid var(--accent);
+}
+
+h3 {
+  margin: 0.75rem 0 0.35rem;
+}
+
+.color-grid,
+.wireframe-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.swatch {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.primary {
+  background-color: var(--primary);
+}
+
+.accent {
+  background-color: var(--accent);
+}
+
+.background {
+  background-color: var(--background);
+}
+
+.wireframe {
+  padding: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background-color: #fcfaf7;
+}
+
+.wire-box {
+  margin: 0.5rem 0;
+  padding: 0.85rem;
+  border: 2px dashed var(--primary);
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: var(--primary);
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-box,
+.footer-box {
+  background-color: #f0e3d1;
+}
+
+.hero-box {
+  min-height: 5rem;
+  background-color: #f5d797;
+}
+
+footer {
+  padding: 1rem;
+}
+
+@media (min-width: 760px) {
+  .color-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wireframe-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .desktop-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;
+  }
+
+  .desktop-layout .wire-box {
+    margin: 0;
+  }
+
+  .wide {
+    grid-column: 1 / -1;
+  }
+}
