@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Espresso</title>
+  <desc id="desc">Máquina de espresso servindo uma xícara pequena.</desc>
+  <rect width="420" height="260" fill="#f7f2ea"/>
+  <rect x="102" y="52" width="216" height="112" rx="16" fill="#4b2e24"/>
+  <rect x="128" y="78" width="72" height="30" rx="6" fill="#d9a441"/>
+  <path d="M236 116v44" stroke="#d9a441" stroke-width="8" stroke-linecap="round"/>
+  <path d="M188 172h96v18c0 22-18 40-40 40h-16c-22 0-40-18-40-40z" fill="#ffffff" stroke="#4b2e24" stroke-width="8"/>
+</svg>

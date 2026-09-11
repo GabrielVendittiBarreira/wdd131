@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota do Café | Guia para Cafés e Métodos</title>
+    <meta
+      name="description"
+      content="Rota do Café apresenta cafeterias, métodos de preparo e dicas para escolher uma experiência com café."
+    >
+    <meta name="author" content="Gabriel Venditti Barreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="estilos/site.css">
+    <script src="scripts/site.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="brand" href="index.html">Rota do Café</a>
+        <button id="menuButton" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav id="siteNav">
+          <a href="index.html" aria-current="page">Início</a>
+          <a href="cafeterias.html">Cafeterias</a>
+          <a href="metodos.html">Métodos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Guia simples para boas xícaras</p>
+          <h1>Encontre seu próximo café favorito.</h1>
+          <p>
+            Explore cafeterias, compare métodos de preparo e salve suas preferências para escolher melhor onde ir e como
+            preparar café em casa.
+          </p>
+          <a class="button" href="cafeterias.html">Ver cafeterias</a>
+        </div>
+        <img src="imagens/cafe-hero.svg" alt="Xícara de café com grãos ao redor" width="520" height="360">
+      </section>
+
+      <section class="section-heading">
+        <h2>Cafeterias em destaque</h2>
+        <p>Opções para estudar, conversar, experimentar novos grãos ou fazer uma pausa durante a semana.</p>
+      </section>
+      <div id="featuredCafes" class="card-grid"></div>
+
+      <section class="preference-panel">
+        <div>
+          <h2>Qual experiência você procura?</h2>
+          <p>Escolha uma opção e o site lembrará sua preferência neste navegador.</p>
+        </div>
+        <form id="preferenceForm">
+          <label for="coffeeMood">Preferência</label>
+          <select id="coffeeMood" name="coffeeMood">
+            <option value="estudo">Lugar calmo para estudar</option>
+            <option value="amigos">Ambiente para encontrar amigos</option>
+            <option value="casa">Preparo em casa</option>
+          </select>
+          <button type="submit">Salvar preferência</button>
+        </form>
+        <p id="preferenceMessage" class="status-message"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="anoatual"></span> Gabriel Venditti Barreira | Rota do Café</p>
+      <p><a href="referencias.html">Referências</a> | <a href="planejamentodosite.html">Planejamento</a></p>
+      <p id="ultimaModificacao"></p>
+    </footer>
+  </body>
+</html>

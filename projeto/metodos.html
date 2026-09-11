@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Preparo | Rota do Café</title>
+    <meta
+      name="description"
+      content="Métodos de preparo de café com dicas para iniciantes e formulário de recomendação."
+    >
+    <meta name="author" content="Gabriel Venditti Barreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="estilos/site.css">
+    <script src="scripts/site.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="brand" href="index.html">Rota do Café</a>
+        <button id="menuButton" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav id="siteNav">
+          <a href="index.html">Início</a>
+          <a href="cafeterias.html">Cafeterias</a>
+          <a href="metodos.html" aria-current="page">Métodos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <h1>Métodos de preparo</h1>
+        <p>Compare perfis de sabor, dificuldade e rotina para escolher um método adequado ao seu momento.</p>
+      </section>
+
+      <div id="methodsList" class="method-grid"></div>
+
+      <section class="recommendation">
+        <h2>Receba uma sugestão</h2>
+        <form id="methodForm">
+          <label for="experience">Seu nível de experiência</label>
+          <select id="experience" name="experience" required>
+            <option value="" disabled selected>Escolha uma opção...</option>
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
+          </select>
+
+          <label for="flavor">Perfil de sabor desejado</label>
+          <select id="flavor" name="flavor" required>
+            <option value="" disabled selected>Escolha um sabor...</option>
+            <option value="suave">Suave e limpo</option>
+            <option value="encorpado">Encorpado</option>
+            <option value="intenso">Intenso</option>
+          </select>
+
+          <button type="submit">Gerar recomendação</button>
+        </form>
+        <p id="methodResult" class="status-message"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="anoatual"></span> Gabriel Venditti Barreira | Rota do Café</p>
+      <p><a href="referencias.html">Referências</a> | <a href="planejamentodosite.html">Planejamento</a></p>
+      <p id="ultimaModificacao"></p>
+    </footer>
+  </body>
+</html>

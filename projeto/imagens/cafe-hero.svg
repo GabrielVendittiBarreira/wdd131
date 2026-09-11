@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">Xícara de café com grãos</title>
+  <desc id="desc">Ilustração de uma xícara de café sobre fundo claro com grãos decorativos.</desc>
+  <rect width="520" height="360" rx="28" fill="#f1dfbe"/>
+  <circle cx="260" cy="178" r="112" fill="#ffffff"/>
+  <circle cx="260" cy="178" r="82" fill="#4b2e24"/>
+  <circle cx="242" cy="155" r="28" fill="#6f4737" opacity=".7"/>
+  <path d="M342 150h28c25 0 43 19 43 43s-18 43-43 43h-28v-26h27c10 0 18-7 18-17s-8-17-18-17h-27z" fill="#ffffff"/>
+  <ellipse cx="185" cy="282" rx="34" ry="16" fill="#4b2e24"/>
+  <path d="M174 282c8-14 17-18 24-12 6 7 2 17-13 26-8-2-12-6-11-14z" fill="#6f4737"/>
+  <ellipse cx="356" cy="72" rx="34" ry="16" fill="#4b2e24"/>
+  <path d="M345 72c8-14 17-18 24-12 6 7 2 17-13 26-8-2-12-6-11-14z" fill="#6f4737"/>
+</svg>

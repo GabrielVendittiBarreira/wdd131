@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="280" viewBox="0 0 420 280" role="img" aria-labelledby="title desc">
+  <title id="title">Cafeteria para amigos</title>
+  <desc id="desc">Duas xícaras em uma mesa redonda.</desc>
+  <rect width="420" height="280" fill="#f7f2ea"/>
+  <circle cx="210" cy="152" r="92" fill="#f1dfbe"/>
+  <circle cx="165" cy="138" r="40" fill="#ffffff"/>
+  <circle cx="165" cy="138" r="27" fill="#4b2e24"/>
+  <circle cx="255" cy="138" r="40" fill="#ffffff"/>
+  <circle cx="255" cy="138" r="27" fill="#6f4737"/>
+  <path d="M118 196h184" stroke="#4b2e24" stroke-width="14" stroke-linecap="round"/>
+</svg>

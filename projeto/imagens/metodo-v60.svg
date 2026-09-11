@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Método V60</title>
+  <desc id="desc">Filtro cônico sobre jarra de café.</desc>
+  <rect width="420" height="260" fill="#f7f2ea"/>
+  <path d="M144 56h132l-35 90h-62z" fill="#ffffff" stroke="#4b2e24" stroke-width="8"/>
+  <path d="M176 156h68l24 64H152z" fill="#d9a441" stroke="#4b2e24" stroke-width="8"/>
+  <path d="M174 92h72" stroke="#d9a441" stroke-width="7" stroke-linecap="round"/>
+</svg>
