@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Formulário de Avaliação de Produto</title>
+    <meta
+      name="description"
+      content="Formulário de avaliação de produto para a tarefa S05 do curso WDD 131."
+    >
+    <meta name="author" content="Gabriel Venditti Barreira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Avaliação de Produto</h1>
+    </header>
+
+    <main>
+      <form method="get" action="avaliacao.html">
+        <label for="productName">Nome do Produto <span>*</span></label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Selecione um Produto...</option>
+        </select>
+
+        <fieldset>
+          <legend>Classificação Geral <span>*</span></legend>
+          <div class="rating">
+            <label for="rating1">
+              <input type="radio" id="rating1" name="rating" value="1" required>
+              <span>&star;</span>
+            </label>
+            <label for="rating2">
+              <input type="radio" id="rating2" name="rating" value="2" required>
+              <span>&star;&star;</span>
+            </label>
+            <label for="rating3">
+              <input type="radio" id="rating3" name="rating" value="3" required>
+              <span>&star;&star;&star;</span>
+            </label>
+            <label for="rating4">
+              <input type="radio" id="rating4" name="rating" value="4" required>
+              <span>&star;&star;&star;&star;</span>
+            </label>
+            <label for="rating5">
+              <input type="radio" id="rating5" name="rating" value="5" required>
+              <span>&star;&star;&star;&star;&star;</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <label for="installDate">Data de Instalação <span>*</span></label>
+        <input type="date" id="installDate" name="installDate" required>
+
+        <fieldset>
+          <legend>Recursos Úteis</legend>
+          <label for="durability">
+            <input type="checkbox" id="durability" name="features" value="durability">
+            Durabilidade
+          </label>
+          <label for="ease">
+            <input type="checkbox" id="ease" name="features" value="ease">
+            Facilidade de Uso
+          </label>
+          <label for="performance">
+            <input type="checkbox" id="performance" name="features" value="performance">
+            Desempenho
+          </label>
+          <label for="design">
+            <input type="checkbox" id="design" name="features" value="design">
+            Design
+          </label>
+        </fieldset>
+
+        <label for="review">Avaliação Escrita</label>
+        <textarea id="review" name="review" rows="5" placeholder="Conte como foi sua experiência com o produto."></textarea>
+
+        <label for="username">Nome de Usuário</label>
+        <input type="text" id="username" name="username" autocomplete="name">
+
+        <input type="submit" value="Enviar Avaliação">
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="anoatual"></span> Gabriel Venditti Barreira | Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </footer>
+  </body>
+</html>
